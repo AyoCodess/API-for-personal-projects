@@ -153,28 +153,40 @@
                     <p class="text-lg text-gray-500">
                       Get all 50 current user accounts
                     </p>
-                    <p class="text-green-700 text-lg">
-                      calvin.hawkins@example.com
-                    </p>
+                    <a class="text-green-700 text-lg" href="https://ayocodes-api.up.railway.app/api/contacts/" target="_blank" rel="noopener">
+                      https://ayocodes-api.up.railway.app/api/contacts
+                    </a>
                   </div>
                 </li>
                 <li class="py-4">
                   <div class="">
                     <p class="font-bold text-2xl text-gray-900">GET</p>
                     <p class="text-lg text-gray-500">
-                      Reset API to original state to default 50 user accounts
+                      Reset API to original state and get the default 50 user accounts
                     </p>
-                    <p class="text-lg text-green-700">
-                      calvin.hawkins@example.com
-                    </p>
+                    <a class="text-lg text-green-700" href="https://ayocodes-api.up.railway.app/api/contacts/reset" target="_blank" rel="noopener">
+                      https://ayocodes-api.up.railway.app/api/contacts<span
+                        class="font-bold text-blue-600"
+                        >/reset</span
+                      >
+                    </a>
                   </div>
                 </li>
                 <li class="py-4">
                   <div class="">
                     <p class="font-bold text-2xl text-gray-900">POST</p>
                     <p class="text-lg text-gray-500">Add new user account</p>
-                    <p class="text-lg text-green-700">
-                      kristen.ramos@example.com
+                    <p class="text-lg text-green-700" >
+                      https://ayocodes-api.up.railway.app/api/contacts
+                    </p>
+                    <p class="text-lg text-gray-500">
+                   <span class="font-bold">Request Body:</span>
+                          <code>
+                        { id, firstName, lastName,
+                            dateOfBirth,
+                            school, phoneNumber, etc... }
+                          </code>
+                      </pre>
                     </p>
                   </div>
                 </li>
@@ -184,7 +196,12 @@
                     <p class="text-lg text-gray-500">
                       Update any user account via their ID
                     </p>
-                    <p class="text-lg text-green-700">ted.fox@example.com</p>
+                    <p class="text-lg text-green-700">
+                      https://ayocodes-api.up.railway.app/api/contacts<span
+                        class="font-bold text-blue-600"
+                        >/update/id</span
+                      >
+                    </p>
                   </div>
                 </li>
                 <li class="py-4">
@@ -193,7 +210,12 @@
                     <p class="text-lg text-gray-500">
                       Delete any user account via there ID
                     </p>
-                    <p class="text-lg text-green-700">ted.fox@example.com</p>
+                    <p class="text-lg text-green-700">
+                      https://ayocodes-api.up.railway.app/api/contacts<span
+                        class="font-bold text-blue-600"
+                        >/id</span
+                      >
+                    </p>
                   </div>
                 </li>
               </ul>
