@@ -2,7 +2,7 @@
 
 ## About
 
-This project was originally built for my other personal project which consumes this API: https://student-database-ayocodes.netlify.app/
+This project was originally built for my other project which consumes this API: https://student-database-ayocodes.netlify.app/
 
 The original third-party API suddenly stopped working so I decided to create my own API for some of my personal projects going forward.
 
