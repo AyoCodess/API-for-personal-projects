@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { DefaultContacts } from '../Contacts.js';
+import { DefaultContacts } from './Contacts.js';
 import path from 'path';
 
 const app = express();
@@ -8,11 +8,14 @@ const port = process.env.PORT || 3004;
 app.use(cors());
 app.use(express.json());
 const __dirname = path.resolve(path.dirname(''));
-app.use(express.static('dist'));
+
+app.use(express.static('public'));
 let currentContacts;
 
 app.get(`/`, (req, res) => {
-  res.sendFile('./src/page.html', { root: __dirname });
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
+  res.sendFile('page.html', { root: path.join(__dirname, 'public') });
 });
 
 // - GET all contacts
@@ -73,3 +76,5 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
+
+export default app;
