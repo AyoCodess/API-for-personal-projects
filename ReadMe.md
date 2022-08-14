@@ -8,4 +8,4 @@ The original third-party API suddenly stopped working so I decided to create my 
 
 **Note:** The date property in an user account object is purposefully in ISO 8601 format.
 
-### Live Link: https://ayocodes-api.up.railway.app/
+### Live Link: https://api-for-personal-projects.vercel.app/
